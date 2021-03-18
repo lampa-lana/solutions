@@ -1,5 +1,7 @@
 .container
-  &-us
+  &-do
+    display: flex
+    justify-content: space-between
     max-width: 1920px
     margin: 0
     padding: 77px 50px 299px 342px
@@ -17,15 +19,16 @@
       right: 0
       z-index: -1
       background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 58.33%, #FFFFFF 100%), #FFFFFF
-.us
+.do
   display: flex
   justify-content: space-between
   flex-direction: column
   align-items: left
+  max-width: 820px
   &-about
     display: flex
     justify-content: space-between
-    align-items: left
+    align-items: center
   &-title
     margin: 0
     padding: 0
@@ -50,21 +53,28 @@
     width: 687px
     flex-wrap: wrap
     display: flex
-    justify-content: space-between
+    justify-content: space-evenly
     flex-direction: row
     align-items: left
   &-block
-    margin-bottom: 45px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    margin-bottom: 48px
+    margin-right: 20px
     &__img
-      width: 134px
-      height: 134px
+      width: 112px
+      height: 112px
       background-color: #ffffff
       border: none
       outline: none
       box-shadow: 0px 112px 80px rgba(100, 120, 153, 0.07), 0px 40.8818px 29.2013px rgba(100, 120, 153, 0.0482987), 0px 19.8474px 14.1767px rgba(100, 120, 153, 0.0389404), 0px 9.72955px 6.94968px rgba(100, 120, 153, 0.0310596), 0px 3.84708px 2.74791px rgba(100, 120, 153, 0.0217013)
       border-radius: 40px
-      &-5, &-office, &-10, &-50
-        margin: 20px 10px 10px 20px
+      margin-bottom: 24px
+
+      &-fin, &-pro, &-crm, &-big, &-back, &-mob, &-trade, &-web, &-code, &-test, &-ux, &-des
+        margin: 20px 10px 10px 15px
     &-title
       font-style: normal
       font-weight: bold
@@ -72,7 +82,28 @@
       line-height: 32px
       color: #08162E
     &__text
-      font-family: 'Roboto', sans-serif
+      font-family: 'NimbusSanNo5TCY', arial
+      font-style: normal
+      font-weight: normal
       font-size: 17px
       line-height: 24px
+      text-align: center
+      letter-spacing: -0.02em
+      font-feature-settings: 'ss03' on
       color: #616D7D
+  &-software
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    flex-basis: 55%
+    font-family: 'NimbusSanNo5TCY', arial
+    font-style: normal
+    font-weight: normal
+    font-size: 40px
+    line-height: 64px
+    letter-spacing: -0.02em
+    font-feature-settings: 'ss03' on
+    color: #FFFFFF
+    text-shadow: 0px 112px 80px rgba(100, 120, 153, 0.07), 0px 40.8818px 29.2013px rgba(100, 120, 153, 0.0482987), 0px 19.8474px 14.1767px rgba(100, 120, 153, 0.0389404), 0px 9.72955px 6.94968px rgba(100, 120, 153, 0.0310596), 0px 3.84708px 2.74791px rgba(100, 120, 153, 0.0217013)
+    &-item

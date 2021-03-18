@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" class="css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -18,175 +19,400 @@
     <title>IT Solutions</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav-head">
-        <a href="#" class="nav-head__logo">
-          <span class="nav-head__text">ай-ти</span>
-          <span class="nav-head__text"> солюшнс </span>
-        </a>
+    <section class="homepage1">
+      <nav class="nav">
+        <div class="nav-head">
+          <a href="#" class="nav-head__logo">
+            <span class="nav-head__text">ай-ти</span>
+            <span class="nav-head__text"> солюшнс </span>
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#us" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/us.svg" alt="мы" class="nav-link__img" />
+                <span class="nav-link__text">мы</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#do" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/do.svg" alt="делаем" class="nav-link__img" />
+                <span class="nav-link__text">делаем </span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/client.png" alt="клиенты" class="nav-link__img" />
+                <span class="nav-link__text">клиенты</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/case.png" alt="кейсы" class="nav-link__img" />
+                <span class="nav-link__text">кейсы</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/team.png" alt="команда" class="nav-link__img" />
+                <span class="nav-link__text">команда</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item nav-item-pro">
+            <a href="#" class="nav-link nav-link-pro">
+              <div class="nav-link__btn nav-link__btn--pro">
+                <img src="#" alt="" class="nav-link__img" />
+                <span class="nav-link__text nav-link__text--pro"
+                  >начать проект</span
+                >
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/lang.png" alt="язык" class="nav-link__img" />
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img
+                  src="img/vacancies.png"
+                  alt="вакансии"
+                  class="nav-link__img"
+                />
+                <span class="nav-link__text">вакансии</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link__btn">
+                <img src="img/flag.png" alt="флаг" class="nav-link__img" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container container-main">
+        <div class="main-info">
+          <h2 class="main-info-title">Ай-Ти Солюшнс</h2>
+          <div class="main-info-name">
+            <h2 class="main-info-name__one">Сайты</h2>
+            <h2 class="main-info-name__two">CRM</h2>
+            <h2 class="main-info-name__three">Кодинг</h2>
+          </div>
+          <div class="main-info-slogan">
+            <span class="main-info-text"
+              >Нашими клиентами являются крупные международные
+              <br />инвестиционные &zwj;компании, хедж-фонды и брокеры.
+            </span>
+          </div>
+        </div>
       </div>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#us" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/us.svg" alt="мы" class="nav-link__img" />
-              <span class="nav-link__text">мы</span>
+    </section>
+    <section class="homepage2">
+      <div class="container container-us">
+        <div class="us" id="us">
+          <h2 class="us-title">Мы в цифрах</h2>
+          <div class="us-slogan">
+            Реализовано несколько крупных проектов <br />
+            для зарубежных заказчиков из Европы и Азии
+          </div>
+          <div class="us-about">
+            <div class="us-info">
+              <div class="us-block">
+                <div class="us-block__img">
+                  <img
+                    src="img/5years.svg"
+                    alt="5 лет"
+                    class="us-block__img-5"
+                  />
+                </div>
+                <h3 class="us-block__title">5 лет</h3>
+                <span class="us-block__text"
+                  >Более 5 лет мы работаем на рынке<br />IT-решений</span
+                >
+              </div>
+              <div class="us-block">
+                <div class="us-block__img">
+                  <img
+                    src="img/10project.svg"
+                    alt="Офис"
+                    class="us-block__img-10"
+                  />
+                </div>
+                <h3 class="us-block__title">10+ проектов</h3>
+                <span class="us-block__text"
+                  >Реализовано несколько крупных<br />
+                  проектов для зарубежных<br />
+                  заказчиков из Европы и Азии</span
+                >
+              </div>
+              <div class="us-block">
+                <div class="us-block__img">
+                  <img
+                    src="img/office.svg"
+                    alt="Офис"
+                    class="us-block__img-office"
+                  />
+                </div>
+                <h3 class="us-block__title">Офис</h3>
+                <span class="us-block__text"
+                  >Наш офис расположен в центре<br />Москве, что позволяет
+                  нашим<br />
+                  клиентам без труда встречаться с<br />нами</span
+                >
+              </div>
+              <div class="us-block">
+                <div class="us-block__img">
+                  <img
+                    src="img/50staff.svg"
+                    alt="Офис"
+                    class="us-block__img-50"
+                  />
+                </div>
+                <h3 class="us-block__title">50 сотрудников</h3>
+                <span class="us-block__text"
+                  >Более 50 сотрудников работает на<br />каждым проектом. При<br />
+                  необходимости мы привлекаем<br />дополнительных
+                  специалистов</span
+                >
+              </div>
             </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/do.svg" alt="делаем" class="nav-link__img" />
-              <span class="nav-link__text">делаем </span>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/client.png" alt="клиенты" class="nav-link__img" />
-              <span class="nav-link__text">клиенты</span>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/case.png" alt="кейсы" class="nav-link__img" />
-              <span class="nav-link__text">кейсы</span>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/team.png" alt="команда" class="nav-link__img" />
-              <span class="nav-link__text">команда</span>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item nav-item-pro">
-          <a href="#" class="nav-link nav-link-pro">
-            <div class="nav-link__btn nav-link__btn--pro">
-              <img src="#" alt="" class="nav-link__img" />
-              <span class="nav-link__text nav-link__text--pro"
-                >начать проект</span
-              >
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/lang.png" alt="язык" class="nav-link__img" />
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img
-                src="img/vacancies.png"
-                alt="вакансии"
-                class="nav-link__img"
-              />
-              <span class="nav-link__text">вакансии</span>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <div class="nav-link__btn">
-              <img src="img/flag.png" alt="флаг" class="nav-link__img" />
-            </div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="container container-main">
-      <div class="main-info">
-        <h2 class="main-info-title">Ай-Ти Солюшнс</h2>
-        <div class="main-info-name">
-          <h2 class="main-info-name__one">Сайты</h2>
-          <h2 class="main-info-name__two">CRM</h2>
-          <h2 class="main-info-name__three">Кодинг</h2>
-        </div>
-        <div class="main-info-slogan">
-          <span class="main-info-text"
-            >Нашими клиентами являются крупные международные
-            <br />инвестиционные &zwj;компании, хедж-фонды и брокеры.
-          </span>
+            <!--       <div class="us-swiper">
+              <div class="swiper-container us-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="us-slider__item">
+                      <span class="us-slider__text"
+                        >Наша компания занимается созданием полного
+                        технологического стека для Форекс брокеров, начиная от
+                        торговых ECN систем и интеграции MT4/MT5 до личного
+                        кабинета пользователя, мобильных приложений, CRM и всех
+                        сопутствующих систем.</span
+                      >
+                      <h3 class="us-slider__user">Сабельник Александр</h3>
+                      <span class="us-slider__pos">Технический директор</span>
+                      <div class="us-slider__img">
+                        <img
+                          src="img/Ellipse 34.png"
+                          alt="Технический директор"
+                          class="us-slider__photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="us-slider__item">
+                      <span class="us-slider__text"
+                        >Наша компания занимается созданием полного
+                        технологического стека для Форекс брокеров, начиная от
+                        торговых ECN систем и интеграции MT4/MT5 до личного
+                        кабинета пользователя, мобильных приложений, CRM и всех
+                        сопутствующих систем.</span
+                      >
+                      <h3 class="us-slider__user">Сабельник Александр</h3>
+                      <span class="us-slider__pos">Технический директор</span>
+                      <div class="us-slider__img">
+                        <img
+                          src="img/Ellipse 34.png"
+                          alt="Технический директор"
+                          class="us-slider__photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="us-slider__item">
+                      <span class="us-slider__text"
+                        >Наша компания занимается созданием полного
+                        технологического стека для Форекс брокеров, начиная от
+                        торговых ECN систем и интеграции MT4/MT5 до личного
+                        кабинета пользователя, мобильных приложений, CRM и всех
+                        сопутствующих систем.</span
+                      >
+                      <h3 class="us-slider__user">Сабельник Александр</h3>
+                      <span class="us-slider__pos">Технический директор</span>
+                      <div class="us-slider__img">
+                        <img
+                          src="img/Ellipse 34.png"
+                          alt="Технический директор"
+                          class="us-slider__photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="us-slider__button us-slider__button-prev"
+                ></button>
+                <button
+                  class="us-slider__button us-slider__button-next"
+                ></button>
+              </div>
+            </div> -->
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container container-us">
-      <div class="us" id="us">
-        <h2 class="us-title">Мы в цифрах</h2>
-        <div class="us-slogan">
-          Реализовано несколько крупных проектов <br />
-          для зарубежных заказчиков из Европы и Азии
-        </div>
-        <div class="us-about">
-          <div class="us-info">
-            <div class="us-block">
-              <div class="us-block__img">
-                <img src="img/5years.svg" alt="5 лет" class="us-block__img-5" />
+    </section>
+    <section class="homepage3">
+      <div class="container container-do">
+        <div class="do" id="do">
+          <h2 class="do-title">Мы делаем</h2>
+          <div class="do-slogan">
+            Реализовано несколько крупных проектов <br />для зарубежных
+            заказчиков из Европы и Азии
+          </div>
+          <div class="do-about">
+            <div class="do-info">
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/fin-test.svg"
+                    alt="fin-test"
+                    class="do-block__img-fin"
+                  />
+                </div>
+                <span class="do-block__text">Бизнес - анализ</span>
               </div>
-              <h3 class="us-block__title">5 лет</h3>
-              <span class="us-block__text"
-                >Более 5 лет мы работаем на рынке<br />IT-решений</span
-              >
-            </div>
-            <div class="us-block">
-              <div class="us-block__img">
-                <img
-                  src="img/10project.svg"
-                  alt="Офис"
-                  class="us-block__img-10"
-                />
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/project.svg"
+                    alt="project"
+                    class="do-block__img-pro"
+                  />
+                </div>
+                <span class="do-block__text">Проектирование</span>
               </div>
-              <h3 class="us-block__title">10+ проектов</h3>
-              <span class="us-block__text"
-                >Реализовано несколько крупных<br />
-                проектов для зарубежных<br />
-                заказчиков из Европы и Азии</span
-              >
-            </div>
-            <div class="us-block">
-              <div class="us-block__img">
-                <img
-                  src="img/office.svg"
-                  alt="Офис"
-                  class="us-block__img-office"
-                />
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img src="img/crm.svg" alt="CRM" class="do-block__img-crm" />
+                </div>
+                <span class="do-block__text">CRM системы</span>
               </div>
-              <h3 class="us-block__title">Офис</h3>
-              <span class="us-block__text"
-                >Наш офис расположен в центре<br />Москве, что позволяет
-                нашим<br />
-                клиентам без труда встречаться с<br />нами</span
-              >
-            </div>
-            <div class="us-block">
-              <div class="us-block__img">
-                <img
-                  src="img/50staff.svg"
-                  alt="Офис"
-                  class="us-block__img-50"
-                />
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/bigdata.svg"
+                    alt="bigdata"
+                    class="do-block__img-big"
+                  />
+                </div>
+                <span class="do-block__text">Big Data</span>
               </div>
-              <h3 class="us-block__title">50 сотрудников</h3>
-              <span class="us-block__text"
-                >Более 50 сотрудников работает на<br />каждым проектом. При<br />
-                необходимости мы привлекаем<br />дополнительных
-                специалистов</span
-              >
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/backoffice.svg"
+                    alt="backoffice"
+                    class="do-block__img-back"
+                  />
+                </div>
+                <span class="do-block__text"
+                  >Внутренние backoffice<br />
+                  системы и инструменты</span
+                >
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img src="img/mob.svg" alt="mob" class="do-block__img-mob" />
+                </div>
+                <span class="do-block__text">Мобильные<br />приложения</span>
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/trade-fin.svg"
+                    alt="trade-fin"
+                    class="do-block__img-trade"
+                  />
+                </div>
+                <span class="do-block__text"
+                  >Торговые<br />финансовые системы</span
+                >
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img src="img/web.svg" alt="web" class="do-block__img-web" />
+                </div>
+                <span class="do-block__text"
+                  >Веб приложения<br />(сайт, личный кабинет)</span
+                >
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/code.svg"
+                    alt="code"
+                    class="do-block__img-code"
+                  />
+                </div>
+                <span class="do-block__text">Управление кодом</span>
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/testdata.svg"
+                    alt="testdata"
+                    class="do-block__img-test"
+                  />
+                </div>
+                <span class="do-block__text">Анализ данных</span>
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img src="img/UX.svg" alt="ux" class="do-block__img-ux" />
+                </div>
+                <span class="do-block__text">UX/UI</span>
+              </div>
+              <div class="do-block">
+                <div class="do-block__img">
+                  <img
+                    src="img/des-system.svg"
+                    alt="des-system"
+                    class="do-block__img-des"
+                  />
+                </div>
+                <span class="do-block__text">Дизайн система</span>
+              </div>
             </div>
           </div>
-          <div class="us-slader"></div>
+        </div>
+        <div class="do-software">
+          <span class="do-software-item do-c">C++</span>
+          <span class="do-software-item do-SQl">SQL</span>
+          <span class="do-software-item do-python">Python</span>
+          <span class="do-software-item do-flutter">Flutter / Dart</span>
+          <span class="do-software-item do-steck">Стек</span>
+          <span class="do-software-item do-java">Java</span>
+          <span class="do-software-item do-objective">Objective C</span>
+          <span class="do-software-item do-wift">Swift</span>
+          <span class="do-software-item do-ux">UX/UI</span>
+          <span class="do-software-item do-pp">Pixel Perfect</span>
+          <span class="do-software-item do-system">Design System</span>
+          <span class="do-software-item do-ui">Ui Kit</span>
+          <span class="do-software-item do-grid">Grid System</span>
         </div>
       </div>
-    </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
