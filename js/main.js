@@ -1,13 +1,13 @@
-$(document).ready(function () {
-  var reviewsSlider = new Swiper('.us-slider', {
-    // Optional parameters
-    loop: true,
-    keyboard: {
+const swiper = new Swiper(".us-slider", {
+  loop: false,
+   keyboard: {
       enabled: true,
     },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.us-slider__button-next',
-      prevEl: '.us-slider__button-prev',
-    },
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: ".us-slider__button-next",
+    prevEl: ".us-slider__button-prev",
+  },
+
   });

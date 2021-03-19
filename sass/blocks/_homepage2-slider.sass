@@ -1,0 +1,131 @@
+.homepage2
+  &-slider
+    flex-basis: 58%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+.us
+  &-slider
+    max-width: 550px
+    height: 841px
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__button
+      position: absolute
+      transform: translateY(-50%)
+      z-index: 100
+      width: 50px
+      height: 50px
+      border: none
+      outline: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 50px
+      background-color: transparent
+      &-prev
+        top: 80%
+        left: 334px
+      &-next
+        top: 79.5%
+        right: 122px
+  &-swiper
+    max-width: 550px
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    margin: auto
+    padding: 0
+    position: relative
+    background-color: transparent
+    &::before
+      content: ''
+      position: absolute
+      top: 128px
+      left: 246px
+      width: 70px
+      height: 47px
+      background-image: url(../img/quote.svg)
+      background-repeat: no-repeat
+      z-index: 10
+    &__image
+      &--big
+        position: relative
+        height: 761px
+      &--mini
+        position: absolute
+        top: 562px
+        left: -27px
+        border-radius: 24px
+    &__img
+      margin: 0
+      padding: 0
+      outline: none
+      object-fit: cover
+      overflow: hidden
+      &--big
+        width: 93%
+        height: 80%
+      &--mini
+        outline: none
+        object-fit: cover
+        overflow: hidden
+        width: 99%
+        height: 100%
+    &__photo
+      position: absolute
+      top: 511px
+      left: 101px
+    &__text
+      position: absolute
+      max-width: 354px
+      top: 228px
+      left: 82px
+      z-index: 10
+      font-family: 'NimbusSanNo5TCY', arial
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 32px
+      text-align: center
+      letter-spacing: -0.03em
+      color: #23242A
+    &__name
+      margin: 0
+      padding: 0
+      position: absolute
+      top: 627px
+      left: 101px
+      font-family: 'Helvetica Neue Black'
+      font-feature-settings: "locl" 0
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px
+      letter-spacing: -0.03em
+      color: #23242A
+    &__pos
+      margin: 0
+      padding: 0
+      position: absolute
+      top: 660px
+      left: 101px
+      font-family: 'Helvetica Neue Black'
+      font-feature-settings: "locl" 0
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.02em
+      color: #616D7D
+.arrow
+  position: absolute
+  top: 15px
+  right: -5px
+  &-img
