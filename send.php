@@ -7,21 +7,19 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $email = $_POST['email'];
-$emailNews = $_POST['emailNews'];
-$password = $_POST['password'];
+$website = $_POST['website'];
 $phone = $_POST['phone'];
 $text = $_POST['text'];
 
 
 // Формирование самого письма
-$title = "Новое сообщение EHYA";
+$title = "Новое сообщение IT Solutions";
 $body = "
 <h2>Новое Обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
-<b>Пароль:</b> $password<br><br>
-<b>Подписка:</b> $emailNews<br><br>
 <b>Телефон:</b> $phone<br><br>
+<b>Почта:</b> $email<br><br>
+<b>Адрес сайта:</b> $website<br><br>
 <b>Сообщение:</b><br>$text
 ";
 
@@ -36,14 +34,14 @@ try {
 
     // Настройки вашей почты  
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'glo.svetlana.arustamyan@gmail.com'; // Логин на почте
-    $mail->Password   = 'Glo24122020'; // Пароль на почте
+    $mail->Username   = 'itsolutions20212021@gmail.com'; // Логин на почте
+    $mail->Password   = 'ITS2021@'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('glo.svetlana.arustamyan@gmail.com', 'Светлана Арустамян'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('itsolutions20212021@gmail.com', 'Сабельник Александр'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('lampa-lana@yandex.ru');  
+    $mail->addAddress('alexandersabelnik@yandex.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);

@@ -1,0 +1,297 @@
+.container
+  &-request
+    display: flex
+    justify-content: space-between
+    max-width: 1920px
+    margin: 0
+    padding: 25px 50px 75px 342px
+    height: 100%
+    position: relative
+    border-radius: 24px
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: -1
+      background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 58.33%, #FFFFFF 100%), #FFFFFF
+.request
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  align-items: left
+  margin-bottom: 30px
+  &-checkbox
+    margin-right: 15px
+  &-link
+    text-decoration: none
+    font-family: 'NimbusSanNo5TCY', arial
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 24px
+    letter-spacing: -0.02em
+    font-feature-settings: 'ss03' on
+    color: #5F6FC7
+  &-apply
+    margin-bottom: 29px
+  &-title-one
+    margin: 0
+    padding: 0
+    margin-bottom: 16px
+    font-family: 'NimbusSanNo5TCY', arial
+    font-style: normal
+    font-weight: bold
+    font-size: 64px
+    line-height: 80px
+    letter-spacing: -0.02em
+    font-feature-settings: 'ss03' on
+    color: #10121D
+  &-text
+    font-family: 'NimbusSanNo5TCY', arial
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: -0.02em
+    font-feature-settings: 'ss03' on
+    color: #616D7D
+  &-contact-form
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-input
+    &-groups
+      width: 820px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+    &-group-name
+      position: relative
+      margin-bottom: 23px
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      width: 398px
+      #name-error
+        position: absolute
+        color: #f30909
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        padding: 28px 81px 0 24px
+        top: 60px
+    &-group-number
+      position: relative
+      margin-bottom: 23px
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      width: 398px
+      #phone-error
+        position: absolute
+        color: #f30909
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        padding: 3px 81px 0 24px
+        top: 84px
+    &-group-email
+      position: relative
+      margin-bottom: 23px
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      width: 398px
+      #email-error
+        position: absolute
+        color: #f30909
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        padding: 3px 81px 0 24px
+        top: 84px
+    &-group-website
+      position: relative
+      margin-bottom: 23px
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      width: 398px
+      #website-error
+        position: absolute
+        color: #f30909
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        padding: 28px 81px 0 24px
+        top: 60px
+    &-group-textarea
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+  &-title
+    margin: 0
+    padding: 0
+    margin-bottom: 9px
+    font-family: 'NimbusSanNo5TCY', arial
+    font-style: normal
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 18px
+    align-items: center
+    color: #616D7D
+  &-textarea
+    &-fields
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+    &-title
+      margin-bottom: 14px
+      font-family: 'NimbusSanNo5TCY', arial
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 18px
+      display: flex
+      align-items: center
+      color: #616D7D
+  &-wellcome
+    width: 291px
+    height: 506px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+    margin-top: 137px
+    &-bg
+      position: relative
+      width: 291px
+      height: 506px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__img
+        width: 291px
+        height: 505px
+      &__title
+        position: absolute
+        top: 106px
+        right: 84px
+        font-family: 'NimbusSanNo5TCY', arial
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        letter-spacing: -0.02em
+        font-feature-settings: 'ss03' on
+        color: #10121D
+      &__photo
+        position: absolute
+        top: 185px
+        right: 73px
+      &__name
+        position: absolute
+        top: 368px
+        right: 112px
+        font-family: 'NimbusSanNo5TCY', arial
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        letter-spacing: -0.02em
+        font-feature-settings: 'ss03' on
+        color: #10121D
+      &__pos
+        position: absolute
+        top: 417px
+        right: 84px
+        font-family: 'NimbusSanNo5TCY', arial
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        letter-spacing: -0.02em
+        font-feature-settings: 'ss03' on
+        color: #616D7D
+  &-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 342px
+    &__tel
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      flex-basis: 11%
+    &__email
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      flex-basis: 7%
+    &__map
+      display: flex
+      justify-content: space-between
+      align-items: left
+      flex-direction: column
+      flex-basis: 58%
+    &__name, &__name-email, &__name-map
+      font-family: 'NimbusSanNo5TCY', arial
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.02em
+      font-feature-settings: 'ss03' on
+      color: #616D7D
+      margin-bottom: 8px
+    &__number, &__email-link, &__map-link
+      font-family: 'NimbusSanNo5TCY', arial
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 32px
+      letter-spacing: -0.02em
+      font-feature-settings: 'ss03' on
+      color: #10121D
+      text-decoration: none
+.input
+  height: 56px
+  border: none
+  outline: none
+  cursor: pointer
+  padding-left: 10px
+.textarea
+  width: 820px
+  height: 201px
+  margin-bottom: 16px
+  border: none
+  outline: none
+  resize: none
+  font-family: 'NimbusSanNo5TCY', arial
+  font-style: normal
+  font-weight: normal
+  font-size: 17px
+  line-height: 20px
+  display: flex
+  align-items: center
+  color: #10121D
+  padding-left: 15px
+  padding-top: 15px

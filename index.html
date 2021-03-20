@@ -83,13 +83,6 @@
           <li class="nav-item">
             <a href="#" class="nav-link">
               <div class="nav-link__btn">
-                <img src="img/lang.png" alt="язык" class="nav-link__img" />
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <div class="nav-link__btn">
                 <img
                   src="img/vacancies.png"
                   alt="вакансии"
@@ -113,7 +106,17 @@
           <h1 class="main-info-title">Ай-Ти Солюшнс</h1>
           <div class="main-info-name">
             <h2 class="main-info-name__one">Сайты</h2>
+            <img
+              src="img/round-grey.svg"
+              alt="round-grey"
+              class="main-info-name__img"
+            />
             <h2 class="main-info-name__two">CRM</h2>
+            <img
+              src="img/round-grey.svg"
+              alt="round-grey"
+              class="main-info-name__img"
+            />
             <h2 class="main-info-name__three">Кодинг</h2>
           </div>
           <div class="main-info-slogan">
@@ -226,7 +229,7 @@
                 </div>
                 <div class="us-swiper__photo">
                   <img
-                    src="img/Ellipse 34.png"
+                    src="img/ellipse.png"
                     alt="photo"
                     class="us-swiper__img us-swiper__img--photo"
                   />
@@ -258,7 +261,7 @@
                 </div>
                 <div class="us-swiper__photo">
                   <img
-                    src="img/Ellipse 34.png"
+                    src="img/ellipse.png"
                     alt="photo"
                     class="us-swiper__img us-swiper__img--photo"
                   />
@@ -290,8 +293,8 @@
                 </div>
                 <div class="us-swiper__photo">
                   <img
-                    src="img/Ellipse 34.png"
-                    alt="photo"
+                    src="img/ellipse.png"
+                    alt=""
                     class="us-swiper__img us-swiper__img--photo"
                   />
                 </div>
@@ -363,9 +366,12 @@
                     fill-opacity="0.8"
                   />
                   <g clip-path="url(#clip0)">
-                    <path d="M21.6 14.3999L23.28 16.0799L16.56
+                    <path
+                      d="M21.6 14.3999L23.28 16.0799L16.56
                     22.7999H36V25.1999H16.56L23.28 31.9199L21.6 33.5999L12
-                    23.9999L21.6 14.3999Z" fill=#616D7D" />
+                    23.9999L21.6 14.3999Z"
+                      fill="#ffffff"
+                    />
                   </g>
                   <rect
                     x="12.5"
@@ -442,7 +448,7 @@
                       result="shape"
                     />
                   </filter>
-                  <clipPath id="clip0">
+                  <clipPath id="clip01">
                     <rect
                       width="24"
                       height="24"
@@ -452,9 +458,9 @@
                   </clipPath>
                 </defs>
               </svg>
-              <div class="arrow">
+              <span class="arrow">
                 <img src="img/arrow.svg" alt="arrow" class="arrow-img" />
-              </div>
+              </span>
             </button>
           </div>
         </section>
@@ -601,10 +607,157 @@
         </div>
       </div>
     </section>
-
+    <section class="homepage8">
+      <div class="container container-request">
+        <div class="request">
+          <div class="request-apply">
+            <h2 class="request-title-one">Оставьте заявку</h2>
+            <span class="request-text"
+              >Заполните все поля и опишите вашу задачу как можно
+              подробнее</span
+            >
+          </div>
+          <div class="request-contact-form">
+            <form action="send.php" method="POST" class="request-form form">
+              <div class="request-input-groups">
+                <div class="request-input-group-name">
+                  <span class="request-title request-title--form">
+                    Ваше имя
+                  </span>
+                  <input
+                    type="text"
+                    class="input request-input request-input-name request-input-group-name"
+                    placeholder="Ваше имя*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="request-input-group-number">
+                  <span class="request-title request-title--form">
+                    Контактный телефон
+                  </span>
+                  <input
+                    type="tel"
+                    class="input request-input request-input-number request-input-group-number"
+                    placeholder="+7 (___) ___-__-__*"
+                    name="phone"
+                    required
+                    minlength="17"
+                  />
+                </div>
+                <div class="request-input-group-email">
+                  <span class="request-title request-title--form">
+                    Эл. почта
+                  </span>
+                  <input
+                    type="email"
+                    class="input request-input request-input-email request-input-group-email"
+                    placeholder="Эл. почта*"
+                    name="email"
+                    required
+                    minlength="6"
+                  />
+                </div>
+                <div class="request-input-group-website">
+                  <span class="request-title request-title--form">
+                    Адрес сайта
+                  </span>
+                  <input
+                    type="url"
+                    class="input request-input request-input-website request-input-group-website"
+                    placeholder="Адрес сайта"
+                    name="website"
+                  />
+                </div>
+              </div>
+              <div class="request-textarea-fields">
+                <span class="request-textarea-title"> Комментарий </span>
+                <textarea
+                  name="text"
+                  class="textarea request-textarea request-input-group-textarea"
+                  placeholder="Комментарий..."
+                ></textarea>
+              </div>
+              <div class="request-agree">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  required
+                  class="checkbox request-checkbox"
+                  id="squared"
+                />
+                <label for="squared"></label>
+                <span class="request-agree__text">Согласие на обработку</span>
+                <a
+                  href="https://rg.ru/2006/07/29/personaljnye-dannye-dok.html"
+                  class="request-link"
+                  >персональных данных</a
+                >
+              </div>
+              <div class="request-form-submit">
+                <span class="request-info">* Обязательные поля</span>
+                <button class="button request-button" type="submit">
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.request-contact-form -->
+        </div>
+        <div class="request-wellcome">
+          <div class="request-wellcome-bg">
+            <img
+              src="img/bg-homepage81.png"
+              alt="card of staff"
+              class="request-wellcome-bg__img"
+            />
+            <span class="request-wellcome-bg__title"
+              >Ваши заявки<br />принимает</span
+            >
+            <div class="request-wellcome-bg__photo">
+              <img
+                src="img/photo-comdir.png"
+                alt=""
+                class="request-wellcome-bg__photo-img"
+              />
+            </div>
+            <span class="request-wellcome-bg__name">Татьяна</span>
+            <span class="request-wellcome-bg__pos"
+              >Коммерческий <br />
+              Директор</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="request-footer">
+        <div class="request-footer__tel">
+          <span class="request-footer__name">Телефон:</span>
+          <a href="tel:+7(495)107-08-03 " class="request-footer__number"
+            >+7 (495) 107-08-03
+          </a>
+        </div>
+        <div class="request-footer__email">
+          <span class="request-footer__name-email">Почта:</span>
+          <a href="mailto:cv@llcmms.com" class="request-footer__email-link"
+            >cv@llcmms.com</a
+          >
+        </div>
+        <div class="request-footer__map">
+          <span class="request-footer__name-map">Адрес</span>
+          <a
+            href="https://yandex.ru/maps/213/moscow/house/prospekt_mira_101s1/Z04YcARmSkYPQFtvfXRwcHtqZQ==/?ll=37.636338%2C55.811791&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=17"
+            class="request-footer__map-link"
+            >Россия, 129085, г. Москва, ул. Проспект Мира, д.101, строение 1</a
+          >
+        </div>
+      </div>
+    </section>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
