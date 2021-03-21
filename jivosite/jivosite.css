@@ -1,0 +1,35 @@
+/* скрываем оригинальный виджет - чтобы не было два ярлыка на экране*/
+#jivo_chat_widget {
+  display: none;
+}
+
+/* стиль по умолчанию - для оффлайн сообщений, если никого нет в онлайне */
+#jivo_custom_widget {
+  position: fixed;
+  right: 73px;
+  top: 90%;
+  width: 59px;
+  z-index: 300000;
+  cursor: pointer;
+
+  height: 56px;
+  background-image: url(images/jivo_widget_offline.png);
+}
+
+/* при наведении ярлык должен сдвигаться вправо на 3px */
+#jivo_custom_widget:hover {
+  right: 76px;
+}
+
+/* если есть операторы в онлайне - показываем другой ярлык*/
+#jivo_custom_widget.jivo_online {
+  position: fixed;
+  right: 73px;
+  top: 90%;
+  width: 59px;
+  z-index: 300000;
+  cursor: pointer;
+
+  height: 56px;
+  background-image: url(images/jivo_widget_offline.png);
+}
