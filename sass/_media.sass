@@ -474,20 +474,21 @@
       max-width: 567px
   .us
     &-slider
-      height: 425px
-      max-width: 280px
+      height: 450px
+      max-width: 230px
       &__button-next
-        top: 88%
-        right: 109px
+        top: 90.5%
+        right: 93px
       &__button-prev
-        top: 88.5%
-        left: 56px
+        top: 91%
+        left: 26px
     &-swiper
+      max-width: 230px
       &::before
         content: ''
         position: absolute
         top: 22px
-        left: 116px
+        left: 81px
         width: 70px
         height: 47px
         background-image: url(../img/quote.svg)
@@ -495,20 +496,23 @@
         z-index: 10
       &__image
         &--big
-          height: 362px
+          height: 376px
         &--mini
-          top: 269px
-          left: -4px
+          top: 280px
+          left: -36px
       &__img
         &--mini
-          width: 96%
+          width: 105%
+        &--big
+          width: 89%
+          height: 80%
       &__text
         max-width: 150px
         font-size: 12px
         letter-spacing: 0em
         line-height: 13px
         top: 94px
-        left: 61px
+        left: 32px
       &__photo
         top: 241px
         left: 45px
@@ -536,10 +540,16 @@
     &-input
       &-group-name, &-group-number, &-group-email, &-group-website
         width: 250px
+
     &-footer
-      width: 280px
+      width: 210px
       padding-left: 50px
       margin: auto
+    &-checkbox
+      margin: auto
+    &-footer
+      &__tel
+        flex-basis: 100%
   .textarea
     margin: auto
     width: 250px
@@ -549,7 +559,7 @@
       padding: 70px 30px 120px 130px
       max-width: 480px
     &-us
-      padding: 50px 30px 70px 130px
+      padding: 50px 30px 70px 150px
       max-width: 480px
     &-do
       padding: 50px 30px 70px 100px
@@ -591,7 +601,7 @@
       font-size: 14px
   .request
     &-title-one
-      ont-size: 26px
+      font-size: 26px
     &-text
       font-size: 14px
     &-input-groups
@@ -601,7 +611,7 @@
       &-group-name, &-group-number, &-group-email, &-group-website
         width: 200px
     &-footer
-      width: 200px
+      width: 210px
       padding-left: 50px
       margin: auto
     &-checkbox
