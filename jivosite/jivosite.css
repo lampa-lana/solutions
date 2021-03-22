@@ -6,7 +6,7 @@
 /* стиль по умолчанию - для оффлайн сообщений, если никого нет в онлайне */
 #jivo_custom_widget {
   position: fixed;
-  right: 73px;
+  right: 2076px;
   top: 90%;
   width: 59px;
   z-index: 300000;
@@ -18,13 +18,13 @@
 
 /* при наведении ярлык должен сдвигаться вправо на 3px */
 #jivo_custom_widget:hover {
-  right: 76px;
+  right: 20px;
 }
 
 /* если есть операторы в онлайне - показываем другой ярлык*/
 #jivo_custom_widget.jivo_online {
   position: fixed;
-  right: 73px;
+  right: 20px;
   top: 90%;
   width: 59px;
   z-index: 300000;
