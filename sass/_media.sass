@@ -55,7 +55,7 @@
           text-decoration: none
   .nav
     &-head
-      margin-bottom: 50px
+      margin-bottom: 2px
     &-item
       height: 85px
 @media (max-width: 1650px)
@@ -279,6 +279,7 @@
     &-slogan
       font-size: 20px
   .do
+    max-width: 500px
     &-slogan
       font-size: 20px
   .request
@@ -294,15 +295,21 @@
 @media (max-width: 992px)
   .container
     &-main
+      padding: 150px 50px 150px 50px
       max-width: 992px
+      margin: auto
+      text-align: center
     &-us
+      padding: 50px 50px 50px 50px
       padding-bottom: 30px
       flex-direction: column
+      margin: auto
     &-do
-      padding-right: 10px
+      padding: 50px 50px 50px 50px
+      margin: auto
     &-request
       max-width: 992px
-      padding-right: 10px
+      padding: 50px 50px 50px 50px
       justify-content: space-between
       align-items: center
   .main-info
@@ -312,23 +319,44 @@
     &-title
       font-size: 32px
     &-name
-      max-width: 800px
+
       &__one, &__two, &__three
         font-size: 56px
     &-slogan
       font-size: 22px
   .do
+    flex-basis: 90%
+    margin: auto
+    align-items: center
     &-about
       width: 380px
     &-software
       font-size: 26px
+  .us
+    margin: auto
+    align-items: center
+    &-about
+      margin: auto
+      align-items: center
+    &-info
+    &-block
+      text-align: center
+      &__img
+        margin: auto
   .request
+    align-items: center
+    flex-basis: 138%
     &-text
       font-size: 20px
+    &-apply
+      text-align: center
     &-input-groups
       width: 350px
+      align-items: center
+      margin: auto
     &-input
       &-group-name, &-group-number,  &-group-email, &-group-website
+        align-items: center
         width: 320px
     &-wellcome
       margin: 0
@@ -368,27 +396,162 @@
     &-form
       &-submit
         font-size: 14px
+    &-textarea
+      &-fields
+        align-items: center
     &-footer
       padding-left: 200px
       width: 700px
   .textarea
     width: 320px
+  .nav
+    display: none
+  .body
+    margin: 0
+    padding-top: 105px
+  .navbar
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-mobile
+        width: 100%
+        background-color: #FFFFFF
+        display: block
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
+  .navbar
+    &-top
+      &__menu-line
+        &--invisible
+          display: none
+  .navbar
+    overflow-y: auto
+    &-menu
+      display: none
+      position: fixed
+      left: 17px
+      right: 0px
+      bottom: 0
+      top: 9px
+      background-color: #FFFFFF
+      z-index: 99
+      border: 1px solid #c4c1c1
+      box-shadow: 0 0 10px #c4c1c1
+      border-radius: 24px
+      &--visible
+        display: block
+        max-height: 60%
+        overflow-y: auto
+        max-width: 96%
+      &__link
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 12px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #6B728D
+        text-decoration: none
+    &-mobile
+      display: block
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+    &__username
+      display: none
+      &--mobile
+        display: block
+        margin-bottom: 20px
+    &__links
+      margin: 0
+      width: 100%
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      text-decoration: none
+    &__list
+      padding: 0
+      margin: 0
+      align-items: center
+      flex-direction: column
+      margin-top: 40px
+      text-decoration: none
+    &__item
+      list-style-type: none
+      margin-bottom: 40px
+    &-top
+      padding-top: 26px
+      padding-bottom: 26px
+      padding-left: 57px
+      padding-right: 57px
+      &__menu
+        &-line
+        &-button
+          &--mobile
+            padding: 13px 125px 12px 125px
+            border: 2px solid #1565D8
+            border-radius: 8px
+            background-color: #FFFFFF
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            background-color: #FFFFFF
+            color: rgba(21, 101, 216, 1)
+            outline: none
+            cursor: pointer
+          &--mini
+            position: absolute
+            top: 29px
+            right: 63px
+            z-index: 100
+            display: flex
+            width: 16px
+            height: 14px
+            padding: 0
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #FFFFFF
+            cursor: pointer
+  .menu
+    &-btn
+      &--close
+        background-image: url(../img/close-icon.png)
+        margin-top: 4px
+        background-size: cover
+        z-index: 100
 @media (max-width: 767px)
   .container
     &-main
-      padding: 150px 50px 150px 150px
+      padding: 50px 50px 50px 50px
       max-width: 767px
+      margin: auto
     &-us
-      padding: 50px 50px 50px 150px
+      padding: 50px 50px 10px 50px
       max-width: 767px
+      margin: auto
     &-do
-      padding: 50px 50px 50px 150px
+      padding: 50px 50px 50px 50px
       max-width: 767px
+      margin: auto
     &-request
-      padding: 50px 50px 50px 150px
+      padding: 50px 50px 50px 50px
       max-width: 767px
+      margin: auto
   .us
-    margin-right: 0
+    margin: auto
     text-align: center
     &-title
       font-size: 40px
@@ -442,11 +605,12 @@
       margin: auto
       margin-top: 20px
     &-footer
-      padding-left: 150px
-      width: 600px
+      padding-left: 50px
+      max-width: 600px
       margin: auto
       &__number, &__email-link, &__map-link
         font-size: 14px
+
 @media (max-width: 766px)
   .do
     margin: auto
@@ -458,20 +622,28 @@
       display: none
     &-contact-form
       margin: auto
+  .navbar
+    &-menu
+      &--visible
+        left: 12px
 @media (max-width: 567px)
   .container
     &-main
-      padding: 100px 50px 150px 150px
+      padding: 50px 50px 50px 50px
       max-width: 567px
+      margin: auto
     &-us
-      padding: 50px 50px 50px 150px
+      padding: 50px 50px 50px 50px
       max-width: 567px
+      margin: auto
     &-do
-      padding: 50px 50px 20px 150px
+      padding: 50px 50px 50px 50px
       max-width: 567px
+      margin: auto
     &-request
-      padding: 50px 50px 50px 150px
+      padding: 50px 50px 50px 50px
       max-width: 567px
+      margin: auto
   .us
     &-slider
       height: 450px
@@ -508,7 +680,7 @@
           height: 80%
       &__text
         max-width: 150px
-        font-size: 12px
+        font-size: 10px
         letter-spacing: 0em
         line-height: 13px
         top: 94px
@@ -553,20 +725,28 @@
   .textarea
     margin: auto
     width: 250px
+  .navbar
+    &-menu
+      &--visible
+        left: 10px
 @media (max-width: 480px)
   .container
     &-main
-      padding: 70px 30px 120px 130px
+      padding: 50px 30px 50px 50px
       max-width: 480px
+      margin: auto
     &-us
-      padding: 50px 30px 70px 150px
+      padding: 50px 30px 50px 50px
       max-width: 480px
+      margin: auto
     &-do
-      padding: 50px 30px 70px 100px
+      padding: 50px 30px 50px 50px
       max-width: 480px
+      margin: auto
     &-request
-      padding: 50px 30px 70px 100px
+      padding: 50px 30px 50px 50px
       max-width: 480px
+      margin: auto
   .nav
     width: 80px
     &-head
@@ -611,9 +791,10 @@
       &-group-name, &-group-number, &-group-email, &-group-website
         width: 200px
     &-footer
-      width: 210px
-      padding-left: 50px
       margin: auto
+      max-width: 300px
+      padding-left: 0
+
     &-checkbox
       margin: auto
     &-footer
@@ -622,6 +803,10 @@
   .textarea
     margin: auto
     width: 200px
+  .navbar
+    &-menu
+      &--visible
+        left: 7px
 @media (max-width: 320px)
   .container
   .main-info

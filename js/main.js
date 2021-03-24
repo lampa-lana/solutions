@@ -43,3 +43,11 @@ const swiper = new Swiper(".us-slider", {
     $(".request-input-number").mask("+7(999) 999-99-99", {
       } );
   }); 
+var menuButton = $(".menu-btn");
+menuButton.on('click', function () {
+  
+  $(".navbar-menu").toggleClass("navbar-menu--visible");
+  $("body").toggleClass("no-scroll");
+  $(".menu-btn").toggleClass("menu-btn--close");
+    $(".navbar-top__menu-line").toggleClass("navbar-top__menu-line--invisible"); 
+});
